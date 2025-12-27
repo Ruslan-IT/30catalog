@@ -1,0 +1,98 @@
+/* ===== MODAL BASE ===== */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+}
+
+.modal.active {
+    display: block;
+}
+
+/* затемнение */
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* окно */
+.modal-dialog {
+    position: relative;
+    max-width: 500px;
+    width: 90%; /* адаптивно для мобильных */
+    z-index: 2;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    position: relative;
+    animation: modalFade 0.3s ease;
+}
+
+/* кнопка закрытия */
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* анимация */
+@keyframes modalFade {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ===== FORM ===== */
+.modal_form_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_form_group label {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.modal_form_group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal_add_to_cart button {
+    width: 100%;
+    padding: 12px;
+    background: #222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.modal_add_to_cart button:hover {
+    background: #000;
+}
+
+/* utility */
+.mb-10 { margin-bottom: 10px; }
+.mb-15 { margin-bottom: 15px; }
+.mt-15 { margin-top: 15px; }
+
+/* блокировка скролла */
+body.modal-open {
+    overflow: hidden;
+}
