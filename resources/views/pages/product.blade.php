@@ -482,9 +482,39 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-9">
+                    <!-- Start Blog Single Content Area -->
+                    <div class="blog-single-wrapper">
+
+                        <h4 class="post-title"></h4>
+                        <div class="para-content">
+                            <p>
+                                {!! nl2br(e($product->desc1)) !!}
+                            </p>
+
+                            <blockquote class="blockquote-content">
+                                {!! nl2br(e($product->desc2)) !!}
+                            </blockquote>
+
+                            <p>
+                                {!! nl2br(e($product->desc3)) !!}
+                            </p>
+
+                        </div>
+
+                    </div> <!-- End Blog Single Content Area -->
+
+
+                </div>
+            </div>
         </div>
+
     </div> <!-- End Product Details Section -->
 
+    <div class="container">
+
+    </div>
 
 
 
