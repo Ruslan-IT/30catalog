@@ -5,6 +5,7 @@ namespace App\Filament\Resources\Categories\Tables;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
@@ -14,6 +15,11 @@ class CategoriesTable
     {
         return $table
             ->columns([
+
+                ImageColumn::make('main_image')
+                    ->label('Фото')
+                    ->disk('public')
+                    ->square(),
                 TextColumn::make('name')
                     ->label('Название')
                     ->formatStateUsing(function ($state, $record) {
