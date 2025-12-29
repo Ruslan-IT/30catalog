@@ -464,8 +464,8 @@
                                 <div class="product-add-to-cart-btn">
                                     <a href="#"
                                        class="open-modal"
-                                       data-subject="Add To Cart">
-                                        Add To Cart
+                                       data-subject="Write to us">
+                                        Write to us
                                     </a>
                                 </div>
                             </div>

@@ -6,17 +6,20 @@
                 <div class="col-lg-3 col-md-3 col-sm-5">
                     <div class="footer-widget footer-widget-contact">
                         <div class="footer-logo">
-                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="" class="img-fluid"></a>
+                            <a href="/"><img src="assets/images/logo/logo-3.png" alt="" class="img-fluid"></a>
                         </div>
                         <div class="footer-contact">
-                            <p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart...</p>
+                            <p>
+                                We are a team of engineers and automation specialists delivering
+                                high-quality pneumatic and industrial automation solutions.
+                            </p>
                             <div class="customer-support">
                                 <div class="customer-support-icon">
                                     <img src="assets/images/icon/support-icon.png" alt="">
                                 </div>
                                 <div class="customer-support-text">
                                     <span>Customer Support</span>
-                                    <a class="customer-support-text-phone" href="tel:(08)123456789">(08) 123 456 789</a>
+                                    <a class="customer-support-text-phone" href="tel:{{ $siteSettings-> phone}}">{{ $siteSettings-> phone}}</a>
                                 </div>
                             </div>
                         </div>
@@ -27,18 +30,12 @@
                         <h3 class="footer-widget-title">Subscribe newsletter to get updated</h3>
                         <form action="#" method="post">
                             <div class="footer-subscribe-box default-search-style d-flex">
-                                <input class="default-search-style-input-box border-around border-right-none subscribe-form" type="email" placeholder="Search entire store here ..." required>
-                                <button class="default-search-style-input-btn" type="submit">Subscribe</button>
+
+
                             </div>
                         </form>
                         <p class="footer-widget-subscribe-note">We’ll never share your email address <br> with a third-party.</p>
-                        <ul class="footer-social">
-                            <li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="" class="youtube"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
@@ -46,16 +43,13 @@
                         <h3 class="footer-widget-title">Information</h3>
                         <div class="footer-menu">
                             <ul class="footer-menu-nav">
-                                <li><a href="">Delivery</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="contact-us.html">Contact us</a></li>
-                                <li><a href="">Stores</a></li>
+
+                               {{-- <li><a href="">About Us</a></li>--}}
+                                <li><a href="/contacts">Contact us</a></li>
+
                             </ul>
                             <ul class="footer-menu-nav">
-                                <li><a href="">Legal Notice</a></li>
-                                <li><a href="">Secure payment</a></li>
-                                <li><a href="">Sitemap</a></li>
-                                <li><a href="my-account.html">My Account</a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -69,7 +63,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
                     <div class="copyright-area">
-                        <p class="copyright-area-text">Copyright © 2020 <a class="copyright-link" href="https://hasthemes.com/">Hasthemes</a></p>
+                        <p class="copyright-area-text">Copyright © 2026 <a class="copyright-link" href="/"></a></p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
