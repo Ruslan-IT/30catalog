@@ -489,18 +489,23 @@
 
                         <h4 class="post-title"></h4>
                         <div class="para-content">
-                            <p>
-                                {!! nl2br(e($product->desc1)) !!}
-                            </p>
+                            @if(!empty($product->desc1))
+                                <p>
+                                    {!! nl2br(e($product->desc1)) !!}
+                                </p>
+                            @endif
 
-                            <blockquote class="blockquote-content">
-                                {!! nl2br(e($product->desc2)) !!}
-                            </blockquote>
+                            @if(!empty($product->desc2))
+                                <blockquote class="blockquote-content">
+                                    {!! nl2br(e($product->desc2)) !!}
+                                </blockquote>
+                            @endif
 
-                            <p>
-                                {!! nl2br(e($product->desc3)) !!}
-                            </p>
-
+                            @if(!empty($product->desc3))
+                                <p>
+                                    {!! nl2br(e($product->desc3)) !!}
+                                </p>
+                            @endif
                         </div>
 
                     </div> <!-- End Blog Single Content Area -->
